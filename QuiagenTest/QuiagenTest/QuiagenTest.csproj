@@ -57,7 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlgorithmsTests.cs" />
+    <Compile Include="PascalTriangleTest.cs" />
+    <Compile Include="ParanthesesBallancingTests.cs" />
     <Compile Include="BaseTest.cs" />
     <Compile Include="LoginTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

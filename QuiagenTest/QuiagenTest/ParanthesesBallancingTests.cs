@@ -9,34 +9,50 @@ using System.Threading.Tasks;
 
 namespace QuiagenTest
 {
-    public class AlgorithmsTests
+    public class ParanthesesBallancingTests
     {
         [Test]
         public void TestBallancingPositive()
         {
-            ParanthesesBallancing ballancing = new ParanthesesBallancing();
+            MyAlgorithms ballancing = new MyAlgorithms();
             ClassicAssert.IsTrue(ballancing.CheckParanthesesBalancing("(if (zero? x) max (/ 1 x))"));
         }
 
         [Test]
         public void TestBallancingPositive2()
         {
-            ParanthesesBallancing ballancing = new ParanthesesBallancing();
+            MyAlgorithms ballancing = new MyAlgorithms();
             ClassicAssert.IsTrue(ballancing.CheckParanthesesBalancing("I told him (that it’s not (yet) done). (But he wasn’t listening)"));
+        }
+
+        [Test]
+        public void TestBallancingPositive3()
+        {
+            MyAlgorithms ballancing = new MyAlgorithms();
+            ClassicAssert.IsTrue(ballancing.CheckParanthesesBalancing("(())((()))()"));
         }
 
         [Test]
         public void TestBallancingNegative()
         {
-            ParanthesesBallancing ballancing = new ParanthesesBallancing();
+            MyAlgorithms ballancing = new MyAlgorithms();
             ClassicAssert.IsFalse(ballancing.CheckParanthesesBalancing(":-)"));
         }
 
         [Test]
         public void TestBallancingNegative2()
         {
-            ParanthesesBallancing ballancing = new ParanthesesBallancing();
+            MyAlgorithms ballancing = new MyAlgorithms();
             ClassicAssert.IsFalse(ballancing.CheckParanthesesBalancing("())("));
         }
+        
+        [Test]
+        public void TestBallancingNegative3()
+        {
+            MyAlgorithms ballancing = new MyAlgorithms();
+            ClassicAssert.IsFalse(ballancing.CheckParanthesesBalancing("("));
+        }
+
+
     }
 }

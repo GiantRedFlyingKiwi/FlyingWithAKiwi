@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 
 namespace Algorithms
 {
-    public class ParanthesesBallancing
+    public class MyAlgorithms
     {
-         
-
+        #region Parantheses Balancing
         private List<char> ConvertStringToCharList(string input)
         {
             List<char> charList = new List<char>();
@@ -44,5 +43,20 @@ namespace Algorithms
             }
             return stack.Count == 0; // True if stack is empty, False otherwise
         }
+        #endregion
+
+        #region Pascal's Triangle
+        public int GetElementFromPascalTriangle(int column, int row)
+        {
+            if (column == 0 || column == row)
+            {
+                return 1;
+            }
+            else
+            {
+                return GetElementFromPascalTriangle(row - 1, column - 1) + GetElementFromPascalTriangle(row - 1, column);
+            }
+        }
+        #endregion
     }
 }
