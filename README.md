@@ -1,6 +1,7 @@
 # FlyingWithAKiwi
 
 The code should build with no problems
+
 Some Pascal Triangle tests trigger stack overflow exception that was not yet handled.
 
 
