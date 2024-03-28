@@ -16,4 +16,5 @@ b.) Don’t know what “reccomented”  at point 4 really means. I suppose it i
  
 3. The Pascal Triangle tests PascalPositiveTest(3,4,6) and (5,4,1) throws a StackOverflowException that I did not had the time to debug.
 
-
+4. Just to bring a litle bit of clarity into the Algorithms tests: Algorithms are not my strong point, and for me it would take much longer than 4 hours to figure out by myself how to solve these.
+   Si that I understand it faster, used the help of my best fried google and implemented some changes in the code so that it suites my needs.
